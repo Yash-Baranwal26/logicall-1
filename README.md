@@ -21,6 +21,7 @@ npm install
 --------------------------------------------------------------------------------
 .env
 DATABASE_URL=postgresql://neondb_owner:npg_Wno0K2iQsuhF@ep-blue-river-ad5721ra-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+
 PORT=4000
 --------------------------------------------------------------------------------
 Run
@@ -35,6 +36,7 @@ This will insert demo records into your Entry table.
 -------------------------------------------------------------------------------
 1. Add New Entry
    POST: http://localhost:4000/api/entries/
+   
    body: {
   "title": "Inception",
   "type": "Movie",
@@ -45,8 +47,9 @@ This will insert demo records into your Entry table.
   "yearOrTime": "2010"
 }
 
-2. List Entries (with Pagination)
+3. List Entries (with Pagination)
    GET: http://localhost:4000/api/entries?page=1&limit=10
+   
    Response: {
   "success": true,
   "currentPage": 1,
@@ -55,21 +58,26 @@ This will insert demo records into your Entry table.
   "data": [ ... ]
 }
 
-3. Update Entries
+5. Update Entries
    PATCH: http://localhost:4000/api/entries/:id
+   
    Body: {
   "location": "New York",
   "budget": 170000000
 }
 
-4. Delete Entries
+7. Delete Entries
    DELETE: http://localhost:4000/api/entries/:id
+   
    Remove entries permanently
 
-5. Search By title
+9. Search By title
    GET: http://localhost:4000/api/entries/search?title=inception
+   
    Returns all entries containing the given title.
+   
 -----------------------------------------------------------------------------
+
 Tech Stack
 Backend: Node.js, Express
 ORM: Prisma
