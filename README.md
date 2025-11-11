@@ -13,11 +13,12 @@ for managing a list of movies and TV shows.
 -------------------------------------------------------------------------------
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone and install dependencies
+Clone and install dependencies 
 ``bash'
 git clone repo_url
 cd Logicall
 npm install
+
 --------------------------------------------------------------------------------
 .env
 
@@ -30,6 +31,7 @@ Run
 npx prisma generate      # Generate Prisma client
 
 npx prisma db push       # Apply schema to database
+
 ---------------------------------------------------------------------------------
 
 * Seed Database
