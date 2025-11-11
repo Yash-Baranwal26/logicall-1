@@ -20,18 +20,23 @@ cd Logicall
 npm install
 --------------------------------------------------------------------------------
 .env
+
 DATABASE_URL=postgresql://neondb_owner:npg_Wno0K2iQsuhF@ep-blue-river-ad5721ra-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 
 PORT=4000
 --------------------------------------------------------------------------------
 Run
+
 npx prisma generate      # Generate Prisma client
+
 npx prisma db push       # Apply schema to database
 ---------------------------------------------------------------------------------
 
 * Seed Database
 To add sample data (2 movies + 2 TV shows):
+
 "npm run seed"
+
 This will insert demo records into your Entry table.
 -------------------------------------------------------------------------------
 1. Add New Entry
