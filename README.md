@@ -40,6 +40,7 @@ To add sample data (2 movies + 2 TV shows):
 "npm run seed"
 
 This will insert demo records into your Entry table.
+
 -------------------------------------------------------------------------------
 1. Add New Entry
    POST: http://localhost:4000/api/entries/
